@@ -1,70 +1,151 @@
-# Getting Started with Create React App
+In this project, let's build a Password Manager by applying the concepts we have learned till now.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Refer to the image below:
 
-## Available Scripts
+![image](https://github.com/bukka5sandhya/Password-Manager-React-Js/assets/133884532/f289e6cc-3ffe-4c5f-b8ea-517802a62cce)
 
-In the project directory, you can run:
+https://assets.ccbp.in/frontend/content/react-js/passowrd-manager-output-v0.gif
 
-### `npm start`
+Design Files
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Click to view
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Extra Small (Size < 576px) and Small (Size >= 576px) - No Passwords View
 
-### `npm test`
+Extra Small (Size < 576px) and Small (Size >= 576px) - Masked Passwords View
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Extra Small (Size < 576px) and Small (Size >= 576px) - Show Passwords View
 
-### `npm run build`
+Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - No Passwords View
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Masked Passwords View
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Show Passwords View
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Set Up Instructions
 
-### `npm run eject`
+Click to view
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Download dependencies by running npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start up the app using npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Completion Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Functionality to be added
 
-## Learn More
+The app must have the following functionalities
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Initially, the website input, username input, and password input should be empty and No Passwords View should be displayed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When non-empty values are provided for the website, username, and password and the Add button is clicked,
 
-### Code Splitting
+A new password item should be added to the list of passwords
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The passwords count should be incremented by one
 
-### Analyzing the Bundle Size
+The stars image should be displayed in the password items instead of the passwords
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The value of the input fields for website, username, and password should be updated to their initial values
 
-### Making a Progressive Web App
+When the Show Password is checked, then the password should be displayed instead of the stars image
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+When a non-empty value is provided in the search input field, then password items whose website is matched with the search input value irrespective of the case should be displayed
 
-### Advanced Configuration
+When a non-empty value is provided in the search input field, and if the website of any password item does not match the value given in the search input, then No Passwords View should be displayed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+When the delete button of a password item is clicked,
 
-### Deployment
+The respective password item should be deleted from the list of passwords
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The passwords count should be decremented by one
 
-### `npm run build` fails to minify
+When all password items are deleted, then No Passwords View should be displayed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Important note
+
+Click to view
+
+The following instructions are required for the tests to pass
+
+HTML input element for website should have the placeholder as Enter Website
+
+HTML input element for username should have the placeholder as Enter Username
+
+HTML input element for password should have the placeholder as Enter Password
+
+The delete button for each password item should have the data-testid as delete
+
+Resources
+
+Image URLs
+
+https://assets.ccbp.in/frontend/react-js/password-manager-logo-img.png alt should be app logo
+
+https://assets.ccbp.in/frontend/react-js/password-manager-sm-img.png alt should be password manager
+
+https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png alt should be password manager
+
+https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png alt should be website
+
+https://assets.ccbp.in/frontend/react-js/password-manager-username-img.png alt should be username
+
+https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png alt should be password
+
+https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png alt should be search
+
+https://assets.ccbp.in/frontend/react-js/no-passwords-img.png alt should be no passwords
+
+https://assets.ccbp.in/frontend/react-js/password-manager-stars-img.png alt should be stars
+
+https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png alt should be delete
+
+Colors
+
+Hex: #9ba9eb
+
+Hex: #c3caea
+
+Hex: #5763a5
+
+Hex: #f8fafc
+
+Hex: #454f84
+
+Hex: #0b69ff
+
+Hex: #94a3b8
+
+Hex: #b6c3ca
+
+Hex: #7683cb
+
+Hex: #f59e0b
+
+Hex: #10b981
+
+Hex: #f97316
+
+Hex: #14b8a6
+
+Hex: #b91c1c
+
+Hex: #ffffff
+
+Hex: #0ea5e9
+
+Hex: #64748b
+
+Font-families
+
+Roboto
+
+Things to Keep in Mind
+
+All components you implement should go in the src/components directory.
+
+Don't change the component folder names as those are the files being imported into the tests.
+
+Do not remove the pre-filled code
+
+Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
